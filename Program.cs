@@ -15,7 +15,7 @@ namespace DatabasePersonalPBO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Welcomepg());
+            Application.Run(new Welcome_Form());
 
             Console.WriteLine("-------- Hello there! --------");
             customer userinput = new customer();

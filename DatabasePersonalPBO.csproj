@@ -48,10 +48,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\uiUNTUNK\DashboardUNTUNK\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="capcayRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capcayRecipe.Designer.cs">
+      <DependentUpon>capcayRecipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cookbook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,15 +82,33 @@
       <DependentUpon>Cookbook.cs</DependentUpon>
     </Compile>
     <Compile Include="customer.cs" />
+    <Compile Include="nasgorRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nasgorRecipe.Designer.cs">
+      <DependentUpon>nasgorRecipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecipesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RecipesDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="searchDBDataSet.Designer.cs">
+    <Compile Include="RecipesDataSetFix.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>searchDBDataSet.xsd</DependentUpon>
+      <DependentUpon>RecipesDataSetFix.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="recipeSoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recipeSoto.Designer.cs">
+      <DependentUpon>recipeSoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rendangRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rendangRecipe.Designer.cs">
+      <DependentUpon>rendangRecipe.cs</DependentUpon>
     </Compile>
     <Compile Include="UploadForm.cs">
       <SubType>Form</SubType>
@@ -94,12 +124,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>uploads.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Welcomepg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Welcomepg.Designer.cs">
-      <DependentUpon>Welcomepg.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpSchpg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,14 +138,29 @@
     <Compile Include="SearchForm.Designer.cs">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Welcome_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_Form.Designer.cs">
+      <DependentUpon>Welcome_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="capcayRecipe.resx">
+      <DependentUpon>capcayRecipe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cookbook.resx">
       <DependentUpon>Cookbook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nasgorRecipe.resx">
+      <DependentUpon>nasgorRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recipeSoto.resx">
+      <DependentUpon>recipeSoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rendangRecipe.resx">
+      <DependentUpon>rendangRecipe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UploadForm.resx">
       <DependentUpon>UploadForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Welcomepg.resx">
-      <DependentUpon>Welcomepg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpSchpg.resx">
       <DependentUpon>UpSchpg.cs</DependentUpon>
@@ -138,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_Form.resx">
+      <DependentUpon>Welcome_Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,16 +201,16 @@
     <None Include="RecipesDataSet.xss">
       <DependentUpon>RecipesDataSet.xsd</DependentUpon>
     </None>
-    <None Include="searchDBDataSet.xsc">
-      <DependentUpon>searchDBDataSet.xsd</DependentUpon>
+    <None Include="RecipesDataSetFix.xsc">
+      <DependentUpon>RecipesDataSetFix.xsd</DependentUpon>
     </None>
-    <None Include="searchDBDataSet.xsd">
+    <None Include="RecipesDataSetFix.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>searchDBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>RecipesDataSetFix.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="searchDBDataSet.xss">
-      <DependentUpon>searchDBDataSet.xsd</DependentUpon>
+    <None Include="RecipesDataSetFix.xss">
+      <DependentUpon>RecipesDataSetFix.xsd</DependentUpon>
     </None>
     <None Include="uploads.xsc">
       <DependentUpon>uploads.xsd</DependentUpon>
@@ -205,13 +247,6 @@
     <Content Include="Recipes_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Recipes.mdf</DependentUpon>
-    </Content>
-    <Content Include="searchDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="searchDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>searchDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -131,6 +131,7 @@
             this.capcay_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.capcay_pic.TabIndex = 7;
             this.capcay_pic.TabStop = false;
+            this.capcay_pic.Click += new System.EventHandler(this.capcay_pic_Click);
             // 
             // nasgor_pic
             // 
@@ -141,6 +142,7 @@
             this.nasgor_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.nasgor_pic.TabIndex = 6;
             this.nasgor_pic.TabStop = false;
+            this.nasgor_pic.Click += new System.EventHandler(this.nasgor_pic_Click);
             // 
             // soto_pic
             // 
@@ -151,6 +153,7 @@
             this.soto_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.soto_pic.TabIndex = 5;
             this.soto_pic.TabStop = false;
+            this.soto_pic.Click += new System.EventHandler(this.soto_pic_Click);
             // 
             // rendang_pic
             // 
